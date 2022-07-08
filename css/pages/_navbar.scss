@@ -1,0 +1,100 @@
+nav{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        margin-right: 30px;
+        &.hidden{
+            display: none;
+        }
+        img{
+            width: 140px;
+        }
+    }
+    .nav-items{
+        margin-left: 30px;
+        ul{
+            li{
+                position: relative;
+                display: inline-block;
+                margin-left: 25px;
+                font-weight: 500;
+                padding-bottom: 10px;
+                a{
+                    border-bottom: 2px solid #fff;
+                    color: #000;
+                    text-decoration: none;
+                    &.active{
+                        transition: 0.3s;
+                        border-bottom: 2px solid $mainColor;
+                    }    
+                }
+                ul{
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    display: none;
+                    background-color: #fff;
+                    position: absolute;
+                    width: 250px;
+                    text-align: right;
+                    padding: 20px;
+                    z-index: 100;
+                    li{
+                        list-style: none;
+                        font-size: 15px;
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:$mobile){
+            display: none;
+            margin: 0;
+            &.active{
+                display: block;
+                width: 100%;
+                height: 100vh;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                li{
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 25px;
+                    ul{
+                        position: unset;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    .fa-bars{
+        font-size: 22px;
+        margin-left: 25px;
+        display: none;
+        &.hidden{
+            display: none;
+        }
+    }
+    .close-nav{
+        margin: 15px;
+        text-align: right;
+        display: none;
+        i{
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width:$mobile) {
+        .fa-bars{
+            display: block;
+        }
+        .close-nav{
+            display: block;
+        }
+    }
+}

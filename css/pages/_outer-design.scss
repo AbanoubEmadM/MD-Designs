@@ -1,0 +1,52 @@
+.outer-design{
+    text-align: right;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    .main-content{
+        margin-top: 80px;
+        h1{
+            color: $mainColor;
+        }
+        p{
+            line-height: 35px;
+            color: #777;
+            font-size: 18px;
+        }
+        h6{
+            color: #333;
+            font-weight: 600;
+        }
+        li{
+            color: #777;
+            margin-bottom: 15px;
+            span{
+                font-weight: 600;
+            }
+        }
+        .what-is-the-outer-design{
+            p{
+                font-size: 15px;
+            }
+            i{
+                color: #777;
+                font-size: 150px;
+            }
+        }
+    }
+    @media screen and (max-width:$mobile) {
+        h1{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width:$tablet) {
+        h1{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width:$desktop) {
+        h1{
+            font-size: 25px;
+        }
+    }
+
+}

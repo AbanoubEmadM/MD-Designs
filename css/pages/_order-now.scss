@@ -1,0 +1,61 @@
+.banner-order{
+    background: url("../imgs/contact-us.jpg");
+    @include banner;
+    @include imgStyle;
+    h1{
+        font-size: 50px;
+    }
+    @media screen and (max-width:600px){
+        padding: 80px;
+        h1{
+            font-size: 25px;
+        }
+    }
+}
+.contact-us{
+    margin-bottom: 80px;
+    text-align: right;
+    .form{
+        input{
+            width: 100%;
+            outline: none;
+            border: 1px solid #ccc;
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 25px;
+            transition: 0.3s;
+            &[type=email]{
+                text-align: left;   
+            }
+            &[name="الرسالة"]{
+                height: 300px;
+            }
+            &:focus{
+                border: 1px solid green;
+                transition: 0.3s;
+            }
+        }
+        button{
+            padding: 8px 34px;
+            color: #fff;
+            font-weight: 600;
+            background-color: $mainColor;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;        
+        }
+        @media screen and (max-width:$mobile) {
+            margin-top: 160px;
+        }
+        @media screen and (min-width:$desktop) {
+            margin-top: 160px;
+        }
+        @media screen and (min-width:$tablet) {
+            margin-top: 160px;
+        }
+        @media screen and (min-width:$largeDesk) {
+            margin-top: 0;
+        }
+    }
+
+}

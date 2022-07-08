@@ -1,0 +1,60 @@
+@mixin imgStyle{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin banner{
+    text-align: center;
+    padding: 230px;
+    color: #fff;
+    margin-bottom: 80px;
+    @media screen and (max-width:$mobile) {
+        padding: 80px;
+        h1{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width:$tablet) {
+        padding: 100px;
+        h1{
+            font-size: 30px;
+        }
+    }
+    @media screen and (min-width:$desktop) {
+        padding: 140px;
+        h1{
+            font-size: 35px;
+        }
+    }
+    @media screen and (min-width:$largeDesk) {
+        padding: 240px;
+        h1{
+            font-size: 45px;
+        }
+    }
+}
+@mixin overlay {
+        opacity: 0;
+        width: calc(100% - 30px);
+        height: 100%;
+        position: absolute;
+        color: #fff;
+        background: rgba(255,83,73,0.69);
+        transition: 0.36s;
+    
+        text-align: center;
+        p{
+            font-size: 35px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                cursor: pointer;
+            }
+        }
+        &:hover{
+            transition: 0.36s;
+            opacity: 1;
+        }    
+}

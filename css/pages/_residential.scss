@@ -1,0 +1,13 @@
+.residential{
+    text-align: right;
+    .overlay{
+        @include overlay;
+    }
+    .residential-box{
+        cursor: pointer;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }    
+    }
+}

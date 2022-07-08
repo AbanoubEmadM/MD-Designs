@@ -1,0 +1,65 @@
+.inner-design{
+    text-align: right;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    .main-content{
+        .design-price,.talk,.providing-stages,.trust{
+            margin-top: 50px;
+        }
+    margin-top: 80px;
+        img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        h1{
+            color: $mainColor;
+        }
+        p{
+            line-height: 35px;
+            color: #777;
+            font-size: 18px;
+        }
+        h6{
+            color: #333;
+            font-weight: 600;
+        }
+        li{
+            color: #777;
+            margin-bottom: 15px;
+            span{
+                font-weight: 600;
+            }
+        }
+        .contact-now{
+            text-align: center;
+            button{
+                background: $mainColor;
+                width: 205px;
+                height: 56px;
+                border: none;
+                margin: 18px 0;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 600;
+                }        
+            }
+        }
+    }
+    @media screen and (max-width:$mobile) {
+        h1{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width:$tablet) {
+        h1{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width:$desktop) {
+        h1{
+            font-size: 25px;
+        }
+    }
+
+}

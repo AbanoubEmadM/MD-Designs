@@ -1,0 +1,19 @@
+.blog-item{
+    text-align: right;
+        p{
+            line-height: 35px;
+            color: #777;
+            font-size: 18px;
+        }
+        h6{
+            color: #333;
+            font-weight: 600;
+        }
+        li{
+            color: #000;
+            margin-bottom: 15px;
+            span{
+                font-weight: 600;
+            }
+        }
+}

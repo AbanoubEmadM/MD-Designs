@@ -1,0 +1,14 @@
+.furniture{
+    text-align: right;
+    .overlay{
+        @include overlay;
+    }
+    .furniture-box{
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }    
+    }
+}

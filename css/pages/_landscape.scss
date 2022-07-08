@@ -1,0 +1,13 @@
+.landscape{
+    text-align: right;
+    .overlay{
+        @include overlay;
+    }
+    .landscape-box{
+        cursor: pointer;
+        margin-bottom: 15px;
+        img{
+            width: 100%;
+        }    
+    }
+}

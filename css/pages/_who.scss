@@ -1,0 +1,35 @@
+.banner-who{
+    @include banner;
+    background: url('../imgs/about-us.jpg');
+    @include imgStyle;
+    h1{
+        font-size: 50px;
+    }
+    @media screen and (max-width:$mobile){
+        padding: 80px;
+    }
+}
+.about-us{
+    margin-bottom: 80px;
+    text-align: right;
+    p{
+        font-size: 19px;
+        line-height: 39px;    
+    }
+}
+.call-us{
+    background-color: #363636;
+    text-align: center;
+    color: #fff;
+    padding: 150px;
+    img{
+        width: 150px;
+        margin-bottom: 25px;
+    }
+    @media screen and (max-width:$mobile){
+        padding: 51px;
+    }
+}
+.our-details{
+    background-color: #fff;
+}

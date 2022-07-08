@@ -1,0 +1,63 @@
+.finish-decor{
+    text-align: right;
+    margin-bottom: 80px;
+    .main-content{
+        margin-top: 40px;
+        h1{
+            color: $mainColor;
+        }
+        p{
+            line-height: 35px;
+            color: #777;
+            font-size: 18px;
+        }
+        h6{
+            color: #333;
+            font-weight: 600;
+        }
+        li{
+            color: #777;
+            margin-bottom: 15px;
+            span{
+                font-weight: 600;
+            }
+        }
+        .contact-now{
+            text-align: center;
+            button{
+                background: $mainColor;
+                width: 205px;
+                height: 56px;
+                border: none;
+                margin: 18px 0;
+                transition: 0.3s ease-in-out;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 600;
+                }      
+                &:hover{
+                    transition: 0.3s ease-in-out;
+                    background-color: #333;
+                }  
+            }
+        }
+    
+    }
+    @media screen and (max-width:$mobile) {
+        h1{
+            font-size: 25px;
+        }
+    }
+    @media screen and (min-width:$tablet) {
+        h1{
+            font-size: 30px;
+        }
+    }
+    @media screen and (min-width:$desktop) {
+        h1{
+            font-size: 35px;
+        }
+    }
+
+}

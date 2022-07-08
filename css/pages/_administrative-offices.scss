@@ -1,0 +1,15 @@
+.administrative-offices{
+    text-align: right;
+    margin-bottom: 80px;
+    .overlay{
+    @include overlay;
+    }
+    .administrative-offices-box{
+        margin-top: 80px;
+        margin-bottom: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

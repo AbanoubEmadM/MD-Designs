@@ -1,0 +1,28 @@
+.commercial-design{
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .main-content{
+        h1{
+            color: $mainColor;
+        }
+        p{
+            color: #777;
+            line-height: 35px;
+        }
+        li{
+            line-height: 35px;
+            margin-bottom: 15px;
+            color: #777;
+            a{
+                text-decoration: none;
+                color: #777;
+                transition: 0.3s;
+                &:hover{
+                    transition: 0.3s;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
