@@ -1,4 +1,4 @@
-let homeImgs = ['INDEX.HTMLINDEX.HTMLimgs/4 (1).png','INDEX.HTMLINDEX.HTMLimgs/4-1.png','INDEX.HTMLINDEX.HTMLimgs/16-3.jpg','INDEX.HTMLINDEX.HTMLimgs/6-1.png'];
+let homeImgs = ['imgs/4 (1).png','imgs/4-1.png','imgs/16-3.jpg','imgs/6-1.png'];
 let nextImg = document.getElementById("next");
 let prevImg = document.getElementById("prev");
 let index = 0;
