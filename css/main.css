@@ -283,6 +283,7 @@ nav .close-nav i {
 .gallary .gallary-box {
   margin-bottom: 10px;
   cursor: pointer;
+  padding-right: 30px;
 }
 .gallary .gallary-box .overlay {
   opacity: 0;
